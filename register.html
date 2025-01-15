@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <title>X Coin</title>
+
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/updateLandingPage.css">
+
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- meta -->
+    <meta name="title" content="X Coin" />
+    <meta name="author" content="X Coin" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="X Coin">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="X Coin" />
+    <meta property="og:image" content="./assets/images/logo-color.png">
+    <meta property="og:description" content="X Coin">
+
+    <!-- <meta property="og:image" content="./assets/images/ic-website.png" /> -->
+</head>
+
+<body class="login">
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <img class="header-mobile-logo" src="./assets/images/logo-text.png" alt="">
+    </div>
+
+    <!-- LOGIN -->
+    <section class="intro-login">
+        <div class="intro-bg-login">
+            <div id="earth"></div>
+        </div>
+        <div class="intro-wrapper">
+            <div class="container h-100">
+                <div class="row centering h-100">
+                    <div class="col-lg-6 col-12 centering">
+                        <div id="form_login" class="w-100">
+                            <form class="form card-body w-100" novalidate="novalidate" id="formRegister" method="post">
+                                <div class="text-start mb-4">
+                                    <h1 class="intro-title primary-text text-center" data-kt-translate="sign-up-title">Create an Account</h1>
+                                </div>
+                                <div class="fv-row mb-3">
+                                    <input class="form-control form-control-lg form-control-solid" type="text" placeholder="Your Username" autocomplete="off" data-msg-minlength="Username length is from 6 to 30 characters" id="UserName" maxlength="30" minlength="6" name="UserName" required="" value="">
+                                    <span class="label_error" for="UserName"></span>
+                                </div>
+                                <div class="fv-row mb-3">
+                                    <input class="form-control form-control-lg form-control-solid" type="text" placeholder="Your FullName" autocomplete="off" data-msg-minlength="Fullname length is from 6 to 30 characters" id="FullName" maxlength="30" minlength="6" name="FullName" required="" value="">
+                                    <span class="label_error" for="FullName"></span>
+                                </div>
+        
+                                <div class="fv-row mb-3">
+                                    <input class="form-control form-control-lg form-control-solid" placeholder="Your Email" autocomplete="off" name="Email" id="email" data-rule-email="true" value="" required="" data-msg-email="Please enter a valid email">
+                                    <span class="label_error" for="Email"></span>
+                                </div>
+        
+                                <div class="fv-row mb-3">
+                                    <input class="form-control form-control-lg form-control-solid" type="password" placeholder="Your Password" name="Password" autocomplete="off" id="password" maxlength="50" minlength="8" required="" data-msg-minlength="Please enter at least 8 characters" value="">
+                                    <span class="label_error" for="Password"></span>
+                                </div>
+        
+                                <div class="fv-row mb-3">
+                                    <input class="form-control form-control-lg form-control-solid" type="password" placeholder="Confirm Password" autocomplete="off" name="ConfirmPassword" maxlength="50" minlength="8" required="" data-msg-minlength="From 8 to 50 characters" data-rule-equalto="#password" data-msg-equalto="2 Passwords must be matched">
+                                    <span class="label_error" for="ConfirmPassword"></span>
+                                </div>
+                                <div class=" fv-row mb-3">
+                                    <input class="form-control form-control-lg form-control-solid" type="text" autocomplete="off" id="Sponsor" name="Sponsor" placeholder="Your Sponsor">
+                                    <span class="label_error" for="Sponsor"></span>
+                                </div>
+        
+                                <div class="d-flex flex-stack">
+                                    <button id="kt_sign_up_submit" class="primary-button w-100 text-white" data-kt-translate="sign-up-submit" type="submit">
+                                        <span class="">Submit</span>
+                                    </button>
+                                </div>
+        
+                                <div class="mt-3 text-center">
+                                    <span class=" fw-bold fs-5 me-2 text-white" data-kt-translate="sign-in-head-desc">Already a member ?</span>
+                                    <a href="/login.html" class="primary-text fw-bold">Sign In</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+</body>
+
+</html>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="./assets/js/earth.js"></script>
