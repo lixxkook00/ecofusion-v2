@@ -50,10 +50,10 @@ window.addEventListener('load', (event) => {
   //   document.getElementById('total-staking').innerText = '$' + formattedNumber;
   // })
 
-  animateNumber(1374016, 1000, 0, function(number) {
-    // const formattedNumber = number.toLocaleString()
-    document.getElementById('stakers').innerText = number;
-  })
+//   animateNumber(1374016, 1000, 0, function(number) {
+//     // const formattedNumber = number.toLocaleString()
+//     document.getElementById('stakers').innerText = number;
+//   })
 
   // animateNumber(6186056420, 2000, 0, function(number) {
   //   const formattedNumber = number.toLocaleString()
@@ -71,8 +71,6 @@ document.addEventListener('scroll', function() {
     animationWorkFlow = true
   }
 })
-
-
 
 // SLIDER
 var swiper4 = new Swiper(".swiper-product-1", {

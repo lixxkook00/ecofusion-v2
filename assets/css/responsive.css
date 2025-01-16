@@ -329,8 +329,8 @@
     }
 
     .primary-button {
-        padding: 5px 20px;
-        font-size: 18px !important;
+        padding: 5px 10px;
+        font-size: 14px !important;
         min-width: 167px;
         line-height: 26px;
     }
