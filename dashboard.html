@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/lg_token.png">
     <title>Dashboard</title>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -53,17 +53,9 @@
                 <a href="/account.html" class="header-nav-item centering">
                     Account
                 </a>
-                <div class="dropdown show">
-                    <a class="primary-button d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa-solid fa-user mr-2"></i> kanyeX
-                    </a>
-                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">
-                        <i class="fa-solid fa-right-from-bracket"></i> Logout
-                      </a>
-                    </div>
-                </div>
+                <a href="/login.html" class="header-nav-item centering">
+                    Logout
+                </a>
             </div>
         </div>
     </header>
@@ -73,9 +65,138 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-12">
-                    <div class="summary primary-box primary-box--black d-flex flex-column primary-box--gradient">
+                    <div class="primary-box primary-box--black d-flex flex-column col-fit-height">
                         <div class="d-flex flex-column mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">Summary</a>
+                            <a href="#" class="primary-text primary-title mb-1">PLAN</a>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="dashboard-balance-title">Your ID</div>
+                            <div class="text-right"><code><b>adamle</b></code></div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="dashboard-balance-title">Your Package</div>
+                            <div class="text-right"><code><b>NFT X BLACK DIAMOND</b></code></div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="dashboard-balance-title">Your Rank</div>
+                            <div class="text-right"><i class="fa fa-refresh btnUpdateRank"></i> <code><b>---</b></code></div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="dashboard-balance-title">Maxout Percent</div>
+                            <div class="text-right"><b>400%</b></div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="dashboard-balance-title">Maxout Remaining</div>
+                            <div class="text-right"><b>0 <code>EFT</code> / 426,000 <code>EFT</code></b></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-4 col-lg-12">
+                    <div class="primary-box primary-box--black d-flex flex-column  col-fit-height">
+                        <div class="d-flex flex-column mb-7">
+                            <a href="#" class="primary-text primary-title mb-1">BALANCE</a>
+                        </div>
+                        <div class="grid grid-1">
+                            <div class="d-flex align-items-center mb-2">
+                                <div>
+                                    <div class="dashboard-balance-title">USD Balance</div>
+                                    <div class="dashboard-balance-value dashboard-balance-value-large">0.00  <code>USD</code></div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <div>
+                                    <div class="dashboard-balance-title"><code>EFT</code> Balance</div>
+                                    <div class="dashboard-balance-value dashboard-balance-value-large">55,081.30 <code>EFT</code></div>
+                                    <div class="dashboard-desc">≈ 4,962.83 <code>USD</code> (Price: <code>$0.0901</code>)</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-12">
+                    <div class="primary-box primary-box--black d-flex flex-column col-fit-height">
+                        <div class="d-flex flex-column mb-7">
+                            <a href="#" class="primary-text primary-title mb-1">COMMISSION</a>
+                        </div>
+                        <div class="">
+                            
+                            <a href="/user/sales" style="width: 100%; display: block; text-decoration: underline">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div class="dashboard-balance-title" style="color: blue">Sales Network</div>
+                                    <div class="text-right" style="color: blue"><b>0.00 <code>EFT</code></b></div>
+                                </div>
+                            </a>
+    
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="dashboard-balance-title">Direct Bonus</div>
+                                <div class="text-right"><b>0.00 <code>EFT</code></b></div>
+                            </div>
+    
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="dashboard-balance-title">Indirect Bonus</div>
+                                <div class="text-right"><b>0.00 <code>EFT</code></b></div>
+                            </div>
+    
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="dashboard-balance-title">Sales Bonus</div>
+                                <div class="text-right"><b>0.00 <code>EFT</code></b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="primary-box primary-box--black d-flex flex-column" style="overflow: hidden; text-overflow: ellipsis;">
+                        <div class="d-flex flex-column mb-7">
+                            <a href="#" class="primary-text primary-title mb-1">Token Information</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-2 text-center">
+                                <img id="collectableCoin" class="" src="./assets/images/lg_token.png">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                                <div class="grid grid-1" style="padding: 10px;">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div>
+                                            <div class="dashboard-balance-title">Name</div>
+                                            <div class="dashboard-balance-value dashboard-balance-value-large font-weight-bold"><code>ECOFUSION</code></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div>
+                                            <div class="dashboard-balance-title">Symbol</div>
+                                            <div class="dashboard-balance-value dashboard-balance-value-large font-weight-bold"><code>EFT</code></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div>
+                                            <div class="dashboard-balance-title">Contract</div>
+                                            <div class="dashboard-balance-value dashboard-balance-value-large font-weight-bold text-sm" style="overflow-x: auto;" onclick="copy('referral_link1','Copied')">0x3A72d1c47197Cc7DF6d4D28dADbc25dcB09DA55C</div>
+                                            <input type="hidden" id="referral_link1" value="0x3A72d1c47197Cc7DF6d4D28dADbc25dcB09DA55C">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <div id="chartContainer" style="height: 200px; width: 100%;">
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-12">
+                    <div class="summary primary-box primary-box--black d-flex flex-column">
+                        <div class="d-flex flex-column mb-7">
+                            <a class="primary-text primary-title mb-1">STATISTIC</a>
                         </div>
                         <div class="grid grid-2">
                             <div class="d-flex align-items-center mb-3">
@@ -85,7 +206,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 USD</div>
+                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 <code>EFT</code></div>
                                     <div class="dashboard-balance-title">Deposit</div>
                                 </div>
                             </div>
@@ -96,7 +217,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 USD</div>
+                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 <code>EFT</code></div>
                                     <div class="dashboard-balance-title">Withdraw</div>
                                 </div>
                             </div>
@@ -107,7 +228,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 USD</div>
+                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 <code>EFT</code></div>
                                     <div class="dashboard-balance-title">Sent</div>
                                 </div>
                             </div>
@@ -118,174 +239,180 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 USD</div>
+                                    <div class="dashboard-balance-value dashboard-balance-value-large">100,000 <code>EFT</code></div>
                                     <div class="dashboard-balance-title">Received</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="primary-box primary-box--black d-flex flex-column">
-                        <div class="d-flex flex-column mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">Wallet</a>
-                        </div>
-                        <div class="grid grid-1">
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">USD Wallet</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 USD</div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">XCO Wallet</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">0 XCO</div>
-                                    <div class="dashboard-desc">≈ 0.00 USD (Price: $0.1378961)</div>
-                                </div>
-                            </div>
-                            <button type="submit" class="primary-button w-100">View transaction</button>
-                        </div>  
-                    </div>
                 </div>
-
-                <div class="col-xl-4 col-lg-12">
-                    <div class="primary-box primary-box--black d-flex flex-column col-fit-height">
-                        <div class="d-flex flex-column mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">Referral</a>
-                        </div>
-                        <div class="grid grid-1 grid-m-2">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="w-100">
-                                    <div class="dashboard-balance-title">Referral Member</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large text-right">6,789</div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="w-100">
-                                    <div class="dashboard-balance-title">Sales Network</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large text-right">100,000.00 USD</div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="w-100">
-                                    <div class="dashboard-balance-title">Direct Bonus</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large text-right">0.00 USD</div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="w-100">
-                                    <div class="dashboard-balance-title">Indirect Bonus</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large text-right">1,690.00 USD</div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="w-100">
-                                    <div class="dashboard-balance-title">Direct Override Bonus</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large text-right">0.00 XCO</div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="w-100">
-                                    <div class="dashboard-balance-title">Indirect Override Bonus</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large text-right">0.00 XCO</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-lg-12">
-                    <div class="primary-box primary-box--black d-flex flex-column primary-box--gradient col-fit-height">
-                        <div class="d-flex flex-column mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">Your Rank</a>
-                        </div>
-                        <div class="grid grid-1">
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <a href="#" class="primary-text primary-title mb-1">---</a>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <a href="#" class="primary-text primary-title mb-1">Plan included</a>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">Maxout Percent</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">---</div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">Maxout Remaining</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large">$ 0 / $ 0</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-4 col-lg-12">
-                    <div class="primary-box primary-box--black d-flex flex-column">
-                        <div class="d-flex flex-column mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">Token Information</a>
-                        </div>
-                        <div class="grid grid-1">
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">Name</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large font-weight-bold">XCOIN</div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">Symbol</div>
-                                    <div class="dashboard-balance-value dashboard-balance-value-large font-weight-bold">XCO</div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">Contract</div>
-                                    <span class="dashboard-balance-value dashboard-balance-value-large font-weight-bold text-sm">0x22a5197640A3fE3ABB4471e000D25e</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <div>
-                                    <div class="dashboard-balance-title">White Paper</div>
-                                    <a href="" class="dashboard-balance-value dashboard-balance-value-large font-weight-bold d-flex align-items-center">
-                                        <i class="fa-solid fa-download mr-2"></i> Download
-                                    </a>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-
+    
                 <div class="col-xl-8 col-lg-12">
                     <div class="primary-box primary-box--black d-flex flex-column justify-content-between col-fit-height table-mh">
                         <div class="d-flex justify-content-between mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">Member Statistics</a>
-
-                            <button type="submit" class="primary-button">View members</button>
+                            <a class="primary-text primary-title mb-1">RECENT TRANSACTIONS</a>
+                            <a href="/transaction"><span class="primary-text">view more &gt;&gt;</span></a>
                         </div>
-
                         <div class="dashboard-balance-value dashboard-balance-value-large text-center mt-4 mb-4 flex-1 centering text-gray">
-                            No transaction to display
-                        </div>
-                        
-                        <div class="centering mt-4">
-                            <button type="submit" class="primary-button" data-toggle="modal" data-target="#referralModal">Referral Link</button>
+                            <div class="table-responsive">
+                                    <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4 text-left">
+                                        <thead>
+                                            <tr class="fw-bold text-muted">
+                                                <th>Sender / Receiver</th>
+                                                <th>Amount</th>
+                                                <th>Est</th>
+                                                <th>Type</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="d-flex justify-content-start flex-column">
+                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">1/15/2025 12:00:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            6.60 <code>EFT</code>
+                                                        </a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                            Fee 0.00 <code>EFT</code>
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-right ">
+                                                        <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            <code>≈ $0.79</code>
+                                                        </div>
+                                                        <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.12</code></b></div>
+                                                    </td>
+                                                    <td style="color: #036630">
+                                                            <span class="badge py-3 px-4 badge-light-success">
+                                                                Daily profit
+                                                            </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="d-flex justify-content-start flex-column">
+                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">1/15/2025 12:00:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            660.00 <code>EFT</code>
+                                                        </a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                            Fee 0.00 <code>EFT</code>
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-right ">
+                                                        <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            <code>≈ $79.20</code>
+                                                        </div>
+                                                        <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.12</code></b></div>
+                                                    </td>
+                                                    <td style="color: #036630">
+                                                            <span class="badge py-3 px-4 badge-light-success">
+                                                                Daily profit
+                                                            </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="d-flex justify-content-start flex-column">
+                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">1/15/2025 12:00:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            16.50 <code>EFT</code>
+                                                        </a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                            Fee 0.00 <code>EFT</code>
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-right ">
+                                                        <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            <code>≈ $1.98</code>
+                                                        </div>
+                                                        <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.12</code></b></div>
+                                                    </td>
+                                                    <td style="color: #036630">
+                                                            <span class="badge py-3 px-4 badge-light-success">
+                                                                Daily profit
+                                                            </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="d-flex justify-content-start flex-column">
+                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">1/15/2025 12:00:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            3.30 <code>EFT</code>
+                                                        </a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                            Fee 0.00 <code>EFT</code>
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-right ">
+                                                        <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            <code>≈ $0.40</code>
+                                                        </div>
+                                                        <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.12</code></b></div>
+                                                    </td>
+                                                    <td style="color: #036630">
+                                                            <span class="badge py-3 px-4 badge-light-success">
+                                                                Daily profit
+                                                            </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="d-flex justify-content-start flex-column">
+                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">1/15/2025 12:00:00 AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            6.60 <code>EFT</code>
+                                                        </a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                            Fee 0.00 <code>EFT</code>
+                                                        </span>
+                                                    </td>
+                                                    <td class="text-right ">
+                                                        <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                            <code>≈ $0.79</code>
+                                                        </div>
+                                                        <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.12</code></b></div>
+                                                    </td>
+                                                    <td style="color: #036630">
+                                                            <span class="badge py-3 px-4 badge-light-success">
+                                                                Daily profit
+                                                            </span>
+                                                    </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -369,17 +496,17 @@
 
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <script>
-    const $query = document.querySelector.bind(document)
-    const $$query = document.querySelectorAll.bind(document)
+    // const $query = document.querySelector.bind(document)
+    // const $$query = document.querySelectorAll.bind(document)
 
-    const toggleNavMobile = () => {
-        $query('.soft-menu').classList.toggle('open')
-        $query('.soft-menu__list').classList.toggle('open')
-    }
+    // const toggleNavMobile = () => {
+    //     $query('.soft-menu').classList.toggle('open')
+    //     $query('.soft-menu__list').classList.toggle('open')
+    // }
 
-    $$query('.soft-menu__item').forEach((element) => {
-        element.onclick = () => {
-            toggleNavMobile()
-        }
-    })
+    // $$query('.soft-menu__item').forEach((element) => {
+    //     element.onclick = () => {
+    //         toggleNavMobile()
+    //     }
+    // })
 </script>

@@ -15,8 +15,9 @@
 }
 
 .header-logo{
-    width: 60px;
-    height: auto;
+    width: auto;
+    height: 100%;
+    max-height: 30px;
 }
 
 .header-nav-item {
@@ -34,7 +35,7 @@
     cursor: pointer;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-image: linear-gradient(45deg, #036630 0%, #036630 33%, #03C75E 100%);;
+    background-image: linear-gradient(45deg, #01EFB0 0%, #01EFB0 33%, #03c75e8c 100%);
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -918,10 +919,10 @@ input:focus-visible{
 .primary-box{
     background-color: #6c757d1a;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 15px;
-    margin-top: 10px;
-    border: 2px solid #08271D;
+    margin-top: 15px;
+    border: 2px solid #003b2899;
 }
 
 .primary-box.pd-15 {
@@ -1788,14 +1789,30 @@ select {
     color: #00AB00;
 }
 
+code {
+    font-size: unset;
+    color: unset;
+    word-break: break-word;
+}
 
+.table-responsive {
+ font-size: 14px;   
+}
 
+.table thead th,
+.table td, .table th {
+    border: none;
+    color: #fff;
+}
 
+.badge-light-success {
+    color: #01EFB0;
+}
 
-
-
-
-
+.table thead tr,
+.table tr:nth-child(2n) {
+    background-color: #0E1111;
+}
 
 
 
