@@ -350,6 +350,15 @@
     .login .form-control {
         font-size: 1rem;
     }
+
+    .intro-title {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    #intro .grid {
+        align-items: center !important;
+    }
 }
 
 
