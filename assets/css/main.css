@@ -753,9 +753,8 @@ input:focus-visible{
 }
 
 .dashboard-bg {
-    /* background: #000 url(../images/bg-main.jpg) no-repeat center center; */
-    background: rgb(3,30,22);
-    background: linear-gradient(186deg, rgba(3,30,22,1) 0%, rgba(1,8,6,1) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(2, 2, 2, 0.8)), url(../images/bg.jpg) no-repeat left center;
+    background-size: cover;
 }
 
 .form-logo{
