@@ -359,6 +359,72 @@
     #intro .grid {
         align-items: center !important;
     }
+
+    .roadmap-item {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between !important;
+    }
+
+    .roadmap-item-content {
+        width: calc(100vw - 90px);
+        margin: 0px 0 0px 17px;
+    }
+
+    .roadmap-item-content::before {
+        border-left: none;
+        border-top: 1px dashed #fff;
+        width: 50px;
+        height: 0;
+        top: 50%;
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .roadmap-wrapper::before {
+        height: 100%;
+        width: 3px;
+        top: 0;
+        left: 40px;
+        transform: translateX(-50%);
+    }
+
+    .ecosystem-sub-title {
+        font-size: 25px;
+    }
+
+    .ecosystem .gradient-box-title,
+    .gradient-box-title {
+        font-size: 30px;
+    }
+
+    .vision .container .grid .gradient-box {
+        order: 1;
+    }
+
+    .vision .container .grid .d-flex.justify-content-center.wow.animate__slideInLeft {
+        order: 2;
+    }
+
+    .roadmap {
+        padding: 0 !important;
+    }
+
+    .token .centering.w-100 {
+        margin-bottom: 30px;
+    }
+
+    .contract-address {
+        font-size: 12px;
+    }
+
+    .big-background-2 {
+        background-position: center top;
+    }
+
+    .big-background-3 {
+        background-position: 20% top;
+    }
 }
 
 

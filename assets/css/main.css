@@ -1742,8 +1742,18 @@ select {
     background-size: cover;
 }
 
+.big-background-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(2, 2, 2, 0.754)), url(../images/bg-2.jpg) no-repeat left center;
+    background-size: cover;
+}
+
+.big-background-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.793), rgba(2, 2, 2, 0.9)), url(../images/bg-4.jpg) no-repeat left center;
+    background-size: cover;
+}
+
 #about {
-    background: linear-gradient(rgba(0, 0, 0, 0.496), rgba(2, 2, 2, 0.35)), url(../images/bg-main.jpg) no-repeat center bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(2, 2, 2, 0.7)), url(../images/bg-main.jpg) no-repeat center bottom;
     background-size: cover;
 }
 
@@ -1816,12 +1826,76 @@ code {
     background-color: #0E1111;
 }
 
+#chartContainer {
+    height: 400px;
+}
 
+.token-title {
+    color: #01EFB0;
+    font-size: 26px;
+    font-weight: 600;
+}
 
+.token-content+.token-content {
+    margin-top: 30px;
+}
 
+.token-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
 
+.token-item {
+    display: flex;
+    align-items: center;
+}
 
+.token-item+.token-item {
+    margin-top: 20px;
+}
 
+.token-item-icon {
+    font-size: 60px;
+    line-height: 60px;
+    margin-right: 10px;
+    transform: translateY(-5px);
+    color: #01EFB0;
+}
 
+.token-item-value {
+    font-weight: 700;
+    font-size: 16px;
+    color: #01EFB0;
+    overflow:hidden;  
+    text-overflow: ellipsis;
+}
 
+.contract-address {
+    text-wrap: break;
+}
 
+#chartContainer {
+    position: relative;
+}
+
+#chartContainer::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 30px;
+    background-color: #000;
+    z-index: 99;
+}
+
+.ecosystem-box {
+    transition: all 0.25s ease-in-out;
+}
+
+.ecosystem-box:hover {
+    cursor: pointer;
+    box-shadow: #21e787aa 0px 3px 10px -1px, #21e78736 0px 0px 8px 5px;
+    background-color: #000;
+}
