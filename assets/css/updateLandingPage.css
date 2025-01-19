@@ -329,9 +329,9 @@ article {
 .header-nav-item {
   font-weight: 400;
 }
-
+.header-mobile,
 .header {
-  z-index: 999999;
+  z-index: 999999999999999999 !important;
 }
 
 .footer {
@@ -577,4 +577,9 @@ article {
   min-height: 126px;
   text-align: center;
   color: rgb(192 192 192);
+}
+
+#intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.87), rgba(2, 2, 2, 0.909)), url(../images/bg-2.jpg) no-repeat center center;
+  background-size: cover;
 }

@@ -1750,12 +1750,12 @@ select {
 }
 
 .big-background-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(2, 2, 2, 0.754)), url(../images/bg-2.jpg) no-repeat left center;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(2, 2, 2, 0.754)), url(../images/bg-2.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .big-background-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.793), rgba(2, 2, 2, 0.9)), url(../images/bg-4.jpg) no-repeat left center;
+    background: linear-gradient(rgba(0, 0, 0, 0.793), rgba(2, 2, 2, 0.9)), url(../images/bg-4.jpg) no-repeat center center;
     background-size: cover;
 }
 
