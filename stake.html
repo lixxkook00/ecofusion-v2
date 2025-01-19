@@ -66,17 +66,17 @@
             <div class="row">
                 <div class="col-lg-4 col-12">
                     <div class="primary-box primary-box--black d-flex flex-column primary-box--gradient">
-                        <div class="d-flex flex-column mb-7">
+                        <div class="d-flex flex-column">
                             <a href="#" class="primary-text primary-title mb-1">Summary</a>
                         </div>
                         <div class="grid grid-2">
-                            <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center">
                                 <div>
                                     <div class="dashboard-balance-value dashboard-balance-value-large">106,500 <code>EFT</code></div>
                                     <div class="dashboard-balance-title">Stake available</div>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center">
                                 <div>
                                     <div class="dashboard-balance-value dashboard-balance-value-large">62,284.20 <code>EFT</code></div>
                                     <div class="dashboard-balance-title">Earned</div>
@@ -120,7 +120,7 @@
     
                         <div class="dashboard-balance-value dashboard-balance-value-large text-center mt-4 mb-4 flex-1 centering text-gray">
                             <div class="table-responsive" id="html_content">
-                                    <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4 bg-white">
+                                    <table class="stake-table table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
                                         <!--begin::Table head-->
                                         
                                         <!--end::Table head-->
@@ -128,14 +128,12 @@
                                         <tbody>
                                                 <tr>
                                                     <td rowspan="2" class="d-none d-sm-block">
-                                                        
-                                                        
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
                                                             <div class="d-flex justify-content-start flex-column">
                                                                 <a href="#" class="text-dark fw-bold text-hover-primary fs-6">
-                                                                    2,500 <code>EFT</code>
+                                                                   <span class="value">2,500</span> <code>EFT</code>
                                                                 </a>
                                                                 <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                                     303.6% / 460 days
@@ -145,7 +143,7 @@
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            0.66%
+                                                            <span class="value">0.66%</span>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Daily Profit
@@ -153,27 +151,29 @@
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            <span class="NFT38512356">1305.01441</span>  <code>EFT</code>
+                                                            <span class="NFT38512356 value">1305.01441</span>  <code>EFT</code>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Est Earned
                                                         </span>
                                                     </td>
-                                                    
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4">
                                                         <div class="d-flex flex-column w-100 me-2">
                                                             <div class="d-flex flex-stack mb-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold"><span class="estReceive" cur="1303.5" profit="16.5" code="NFT38512356">1305.01441</span> EFT received</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right"> 23%</span>
+                                                                <span class="text-dark me-2 fs-7 fw-bold">
+                                                                    <span class="estReceive value" cur="1303.5" profit="16.5" code="NFT38512356">1305.01441</span> 
+                                                                    EFT received
+                                                                </span>
+                                                                <span class="me-2 fs-7 fw-bold value" style="float:right"> 80%</span>
                                                             </div>
                                                             <div class="progress h-15px w-100" style="background-color: #7dbaf659;">
-                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 22.6695652173913%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                             <div class="d-flex flex-stack mb-2 mt-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold">Staked at 2024-10-29</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right">
+                                                                <span class="text-muted me-2 fs-7 fw-bold">Staked at 2024-10-29</span>
+                                                                <span class="text-muted me-2 fs-7 fw-bold" style="float:right">
                                                                     Finish at 2025-10-12
                                                                     (269 day left)
                                                                 </span>
@@ -183,24 +183,22 @@
                                                 </tr>
                                                 <tr>
                                                     <td rowspan="2" class="d-none d-sm-block">
-                                                        
-                                                        
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
                                                             <div class="d-flex justify-content-start flex-column">
                                                                 <a href="#" class="text-dark fw-bold text-hover-primary fs-6">
-                                                                    1,000 <code>EFT</code>
+                                                                   <span class="value">2,500</span> <code>EFT</code>
                                                                 </a>
                                                                 <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                                    315.48% / 478 days
+                                                                    303.6% / 460 days
                                                                 </span>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            0.66%
+                                                            <span class="value">0.66%</span>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Daily Profit
@@ -208,29 +206,31 @@
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            <span class="NFT33474631">548.40584</span>  <code>EFT</code>
+                                                            <span class="NFT38512356 value">1305.01441</span>  <code>EFT</code>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Est Earned
                                                         </span>
                                                     </td>
-                                                    
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4">
                                                         <div class="d-flex flex-column w-100 me-2">
                                                             <div class="d-flex flex-stack mb-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold"><span class="estReceive" cur="547.800000000001" profit="6.6" code="NFT33474631">548.40584</span> EFT received</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right"> 25%</span>
+                                                                <span class="text-dark me-2 fs-7 fw-bold">
+                                                                    <span class="estReceive value" cur="1303.5" profit="16.5" code="NFT38512356">1305.01441</span> 
+                                                                    EFT received
+                                                                </span>
+                                                                <span class="me-2 fs-7 fw-bold value" style="float:right"> 23%</span>
                                                             </div>
                                                             <div class="progress h-15px w-100" style="background-color: #7dbaf659;">
-                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 24.9%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 22.6695652173913%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                             <div class="d-flex flex-stack mb-2 mt-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold">Staked at 2024-10-25</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right">
-                                                                    Finish at 2025-09-23
-                                                                    (250 day left)
+                                                                <span class="text-muted me-2 fs-7 fw-bold">Staked at 2024-10-29</span>
+                                                                <span class="text-muted me-2 fs-7 fw-bold" style="float:right">
+                                                                    Finish at 2025-10-12
+                                                                    (269 day left)
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -238,24 +238,22 @@
                                                 </tr>
                                                 <tr>
                                                     <td rowspan="2" class="d-none d-sm-block">
-                                                        
-                                                        
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
                                                             <div class="d-flex justify-content-start flex-column">
                                                                 <a href="#" class="text-dark fw-bold text-hover-primary fs-6">
-                                                                    1,000 <code>EFT</code>
+                                                                   <span class="value">2,500</span> <code>EFT</code>
                                                                 </a>
                                                                 <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                                    315.48% / 478 days
+                                                                    303.6% / 460 days
                                                                 </span>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            0.66%
+                                                            <span class="value">0.66%</span>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Daily Profit
@@ -263,29 +261,31 @@
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            <span class="NFT02276751">555.00592</span>  <code>EFT</code>
+                                                            <span class="NFT38512356 value">1305.01441</span>  <code>EFT</code>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Est Earned
                                                         </span>
                                                     </td>
-                                                    
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4">
                                                         <div class="d-flex flex-column w-100 me-2">
                                                             <div class="d-flex flex-stack mb-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold"><span class="estReceive" cur="554.400000000001" profit="6.6" code="NFT02276751">555.00592</span> EFT received</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right"> 25%</span>
+                                                                <span class="text-dark me-2 fs-7 fw-bold">
+                                                                    <span class="estReceive value" cur="1303.5" profit="16.5" code="NFT38512356">1305.01441</span> 
+                                                                    EFT received
+                                                                </span>
+                                                                <span class="me-2 fs-7 fw-bold value" style="float:right"> 23%</span>
                                                             </div>
                                                             <div class="progress h-15px w-100" style="background-color: #7dbaf659;">
-                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 25.2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 22.6695652173913%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                             <div class="d-flex flex-stack mb-2 mt-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold">Staked at 2024-10-24</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right">
-                                                                    Finish at 2025-09-22
-                                                                    (249 day left)
+                                                                <span class="text-muted me-2 fs-7 fw-bold">Staked at 2024-10-29</span>
+                                                                <span class="text-muted me-2 fs-7 fw-bold" style="float:right">
+                                                                    Finish at 2025-10-12
+                                                                    (269 day left)
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -293,24 +293,22 @@
                                                 </tr>
                                                 <tr>
                                                     <td rowspan="2" class="d-none d-sm-block">
-                                                        
-                                                        
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
                                                             <div class="d-flex justify-content-start flex-column">
                                                                 <a href="#" class="text-dark fw-bold text-hover-primary fs-6">
-                                                                    1,000 <code>EFT</code>
+                                                                   <span class="value">2,500</span> <code>EFT</code>
                                                                 </a>
                                                                 <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                                    315.48% / 478 days
+                                                                    303.6% / 460 days
                                                                 </span>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            0.66%
+                                                            <span class="value">0.66%</span>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Daily Profit
@@ -318,199 +316,37 @@
                                                     </td>
                                                     <td>
                                                         <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            <span class="NFT59343432">561.60599</span>  <code>EFT</code>
+                                                            <span class="NFT38512356 value">1305.01441</span>  <code>EFT</code>
                                                         </a>
                                                         <span class="text-muted fw-semibold text-muted d-block fs-7">
                                                             Est Earned
                                                         </span>
                                                     </td>
-                                                    
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4">
                                                         <div class="d-flex flex-column w-100 me-2">
                                                             <div class="d-flex flex-stack mb-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold"><span class="estReceive" cur="561.000000000001" profit="6.6" code="NFT59343432">561.60599</span> EFT received</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right"> 26%</span>
+                                                                <span class="text-dark me-2 fs-7 fw-bold">
+                                                                    <span class="estReceive value" cur="1303.5" profit="16.5" code="NFT38512356">1305.01441</span> 
+                                                                    EFT received
+                                                                </span>
+                                                                <span class="me-2 fs-7 fw-bold value" style="float:right"> 23%</span>
                                                             </div>
                                                             <div class="progress h-15px w-100" style="background-color: #7dbaf659;">
-                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 25.5%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 22.6695652173913%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                             <div class="d-flex flex-stack mb-2 mt-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold">Staked at 2024-10-23</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right">
-                                                                    Finish at 2025-09-21
-                                                                    (248 day left)
+                                                                <span class="text-muted me-2 fs-7 fw-bold">Staked at 2024-10-29</span>
+                                                                <span class="text-muted me-2 fs-7 fw-bold" style="float:right">
+                                                                    Finish at 2025-10-12
+                                                                    (269 day left)
                                                                 </span>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td rowspan="2" class="d-none d-sm-block">
-                                                        
-                                                        
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex justify-content-start flex-column">
-                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6">
-                                                                    500 <code>EFT</code>
-                                                                </a>
-                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                                    322.08% / 488 days
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            0.66%
-                                                        </a>
-                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                            Daily Profit
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            <span class="NFT58998567">287.40303</span>  <code>EFT</code>
-                                                        </a>
-                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                            Est Earned
-                                                        </span>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4">
-                                                        <div class="d-flex flex-column w-100 me-2">
-                                                            <div class="d-flex flex-stack mb-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold"><span class="estReceive" cur="287.1" profit="3.3" code="NFT58998567">287.40303</span> EFT received</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right"> 27%</span>
-                                                            </div>
-                                                            <div class="progress h-15px w-100" style="background-color: #7dbaf659;">
-                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 27.3428571428572%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                            <div class="d-flex flex-stack mb-2 mt-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold">Staked at 2024-10-21</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right">
-                                                                    Finish at 2025-09-04
-                                                                    (231 day left)
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td rowspan="2" class="d-none d-sm-block">
-                                                        
-                                                        
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex justify-content-start flex-column">
-                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6">
-                                                                    500 <code>EFT</code>
-                                                                </a>
-                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                                    322.08% / 488 days
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            0.66%
-                                                        </a>
-                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                            Daily Profit
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            <span class="NFT21408250">290.70307</span>  <code>EFT</code>
-                                                        </a>
-                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                            Est Earned
-                                                        </span>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4">
-                                                        <div class="d-flex flex-column w-100 me-2">
-                                                            <div class="d-flex flex-stack mb-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold"><span class="estReceive" cur="290.4" profit="3.3" code="NFT21408250">290.70307</span> EFT received</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right"> 28%</span>
-                                                            </div>
-                                                            <div class="progress h-15px w-100" style="background-color: #7dbaf659;">
-                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 27.6571428571429%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                            <div class="d-flex flex-stack mb-2 mt-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold">Staked at 2024-10-20</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right">
-                                                                    Finish at 2025-09-03
-                                                                    (230 day left)
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td rowspan="2" class="d-none d-sm-block">
-                                                        
-                                                        
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="d-flex justify-content-start flex-column">
-                                                                <a href="#" class="text-dark fw-bold text-hover-primary fs-6">
-                                                                    100,000 <code>EFT</code>
-                                                                </a>
-                                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                                    279.84% / 424 days
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            0.66%
-                                                        </a>
-                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                            Daily Profit
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
-                                                            <span class="NFT50937637">58800.62222</span>  <code>EFT</code>
-                                                        </a>
-                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">
-                                                            Est Earned
-                                                        </span>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4">
-                                                        <div class="d-flex flex-column w-100 me-2">
-                                                            <div class="d-flex flex-stack mb-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold"><span class="estReceive" cur="58740" profit="660" code="NFT50937637">58800.62222</span> EFT received</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right"> 21%</span>
-                                                            </div>
-                                                            <div class="progress h-15px w-100" style="background-color: #7dbaf659;">
-                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 20.9785714285714%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                            <div class="d-flex flex-stack mb-2 mt-2 justify-content-between">
-                                                                <span class="text-dark me-2 fs-7 fw-bold">Staked at 2024-10-19</span>
-                                                                <span class="text-dark me-2 fs-7 fw-bold" style="float:right">
-                                                                    Finish at 2025-12-17
-                                                                    (335 day left)
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                                
                                         </tbody>
                                     </table>
                             </div>
@@ -563,7 +399,7 @@
     <!-- FOOTER -->
     <footer class="footer hidden-m">
         <div class="footer-verify">
-            Copyright © X-Coin | Designed by X-Coin Team.
+            ECOFUSION LTD - Company number: 14583260
         </div>
     </footer>
 </body>

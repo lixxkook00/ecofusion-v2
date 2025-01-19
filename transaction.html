@@ -63,63 +63,59 @@
     <!-- MAIN CONTENT -->
     <div class="dashboard-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-12">
-                    <div class="grid grid-2 primary-box primary-box--black w-100">
-                        <div class="token-infor d-flex">
-                            <div class="centering">
-                                <img src="./assets/images/usdtlogo.png" alt="" class="token-img">
-                            </div>
-    
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="dashboard-balance-value dashboard-balance-value-large text-center mb-2">
-                                    99,999.00 USD
-                                </div>
-                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                    USD Balance
-                                </div>
-                            </div>
+            <div class="grid grid-2 grid-m-1">
+                <div class="grid grid-2 grid-m-1 primary-box primary-box--black w-100">
+                    <div class="token-infor d-flex">
+                        <div class="centering">
+                            <img src="./assets/images/usdtlogo.png" alt="" class="token-img">
                         </div>
 
-                        <div class="token-infor d-flex">
-                            <div class="centering">
-                                <img src="./assets/images/lg_token.png" alt="" class="token-img">
+                        <div class="d-flex flex-1 flex-column justify-content-center align-items-end pr-4">
+                            <div class="dashboard-balance-value dashboard-balance-value-large text-center mb-2">
+                                99,999.00 USD
                             </div>
-    
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="dashboard-balance-value dashboard-balance-value-large text-center mb-2">
-                                    100,000.00 XCO
-                                </div>
-                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                    XCO Balance
-                                </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                USD Balance
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="token-infor d-flex">
+                        <div class="centering ml-2">
+                            <img src="./assets/images/lg_token.png" alt="" class="token-img">
+                        </div>
+
+                        <div class="d-flex flex-1 flex-column justify-content-center align-items-end">
+                            <div class="dashboard-balance-value dashboard-balance-value-large text-center mb-2">
+                                100,000.00 EFT
+                            </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                EFT Balance
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-6">
-                    <div data-toggle="modal" data-target="#depositModal" class="primary-box primary-box-cursor primary-box--black d-flex flex-column primary-box--gradient">
-                        <div class="d-flex flex-column align-items-center">
+                <div class="grid grid-2 ">
+                    <div data-toggle="modal" data-target="#depositModal" class="primary-box primary-box-cursor primary-box--black d-flex flex-column primary-box--gradient justify-content-center">
+                        <div class="d-flex align-items-center">
                             <div class="symbol symbol-40px me-3">
                                 <div class="card-icon card-icon-xl">
                                     <i class="fa-solid fa-hand-holding-dollar"></i>
                                 </div>
                             </div>
-                            <div>
+                            <div class="ml-2">
                                 <div class="dashboard-title">Deposit</div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-3 col-6">
-                    <div data-toggle="modal" data-target="#withdrawModal" class="primary-box primary-box-cursor primary-box--black d-flex flex-column primary-box--gradient">
-                        <div class="d-flex flex-column align-items-center">
+                    <div data-toggle="modal" data-target="#withdrawModal" class="primary-box primary-box-cursor primary-box--black d-flex flex-column primary-box--gradient justify-content-center">
+                        <div class="d-flex align-items-center">
                             <div class="symbol symbol-40px me-3">
                                 <div class="card-icon card-icon-xl">
                                     <i class="fa-solid fa-money-bill-1-wave"></i>
                                 </div>
                             </div>
-                            <div>
+                            <div class="ml-2">
                                 <div class="dashboard-title">Withdraw</div>
                             </div>
                         </div>
@@ -131,21 +127,387 @@
                 <div class="col-xl-12">
                     <div class="primary-box primary-box--black d-flex flex-column justify-content-between col-fit-height">
                         <div class="d-flex justify-content-between mb-7">
-                            <a href="#" class="primary-text primary-title mb-1">Transactions</a>
-
-                            <select name="coin" id="coin">
-                                <option value="volvo">Deposit</option>
-                                <option value="saab">Withdraw</option>
-                                <option value="saab">Transfer</option>
-                            </select>
+                            <a href="#" class="primary-text primary-title mb-1 d-none d-md-block">Transactions</a>
+                            <div class="d-flex">
+                                <select name="coin" id="coin" onchange="window.location.href = '/transaction?type='+ $(this).val()" style="border: 1px solid; height: 27px;">
+                                    <option value="">All Types</option>
+                                        <option value="0">Deposit</option>
+                                        <option value="1">Withdraw</option>
+                                        <option value="2">Transfer</option>
+                                        <option value="3">Commission</option>
+                                        <option value="4">Swap</option>
+                                        <option value="5">Stake</option>
+                                        <option value="6">Buy NFT</option>
+                                        <option value="7">Play To Earn</option>
+                                </select>
+                                <select name="coin" id="coin" onchange="window.location.href = '/transaction?commissiontype='+ $(this).val()" style="border: 1px solid; height: 27px;">
+                                    <option value="">All Commissions</option>
+                                        <option value="0">Daily profit</option>
+                                        <option value="1">Direct Bonus</option>
+                                        <option value="2">Indirect Bonus</option>
+                                        <option value="3">Sales Bonus</option>
+                                        <option value="4">Manage Bonus</option>
+                                </select>
+                            </div>
                         </div>
-
+        
                         <div class="dashboard-balance-value dashboard-balance-value-large text-center mt-4 mb-4 text-gray">
-                            No transaction to display
+                            <div class="table-responsive" id="html_content">
+                                <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+                                    <thead>
+                                        <tr class="fw-bold text-muted">
+                                            <th>Sender / Receiver</th>
+                                            <th>Amount</th>
+                                            <th>Est</th>
+                                            <th>Code</th>
+                                            <th>Type</th>
+                                            <th>Wallet Address</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/19/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    3.30 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $0.33
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.1</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT21408250</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/19/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    6.60 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $0.66
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.1</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT02276751</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/19/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    660.00 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $66.00
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.1</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT50937637</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/19/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    3.30 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $0.33
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.1</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT58998567</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/19/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    16.50 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $1.65
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.1</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT38512356</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/19/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    6.60 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $0.66
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.1</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT59343432</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/19/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    6.60 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $0.66
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.1</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT33474631</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <a href="#" class="text-dark fw-bold text-hover-primary fs-6"><code>adamle</code></a>
+                                                        <span class="text-muted fw-semibold text-muted d-block fs-7">1/18/2025 12:00:00 AM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    660.00 <code>EFT</code>
+                                                </a>
+                                                <span class="text-muted fw-semibold text-muted d-block fs-7">
+                                                    Fee 0.00 <code>EFT</code>
+                                                </span>
+                                            </td>
+                                            <td class="text-right ">
+                                                <div class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    ≈ $59.40
+                                                </div>
+                                                <div><b class="text-muted fw-semibold text-muted d-block fs-7">Price <code>$0.09</code></b></div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-dark fw-bold text-hover-primary d-block fs-6">
+                                                    <code>NFT50937637</code>
+                                                </a>
+                                            </td>
+                                            <td style="color: #036630">
+                                                    <span class="badge py-3 px-4 badge-light-success">
+                                                        Daily profit
+                                                    </span>
+
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td style="color: #036630">
+                                                <span class="badge py-3 px-4 badge-light-success">
+                                                    Success
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        
-                        <div class="centering mt-4">
-                            <button type="submit" class="primary-button" data-toggle="modal" data-target="#depositModal">Deposit</button>
+                        <div>
+                            <div class="pagination-container"><ul class="pagination"><li class="active"><a>1</a></li><li><a href="/transaction?page=2">2</a></li><li><a href="/transaction?page=3">3</a></li><li class="disabled PagedList-ellipses"><a>…</a></li><li class="PagedList-skipToNext"><a href="/transaction?page=2" rel="next">»</a></li><li class="PagedList-skipToLast"><a href="/transaction?page=32">»»</a></li></ul></div>
                         </div>
                     </div>
                 </div>
@@ -191,7 +553,7 @@
     <!-- FOOTER -->
     <footer class="footer hidden-m">
         <div class="footer-verify">
-            Copyright © X-Coin | Designed by X-Coin Team.
+            ECOFUSION LTD - Company number: 14583260
         </div>
     </footer>
 
@@ -215,7 +577,7 @@
                         </div>
                         <div class="col-sm-12 mt-4">
                             <div class="mb-4 d-flex align-item-center">
-                                <div class="primary-text centering mr-1">XCO  Deposit Address</div>
+                                <div class="primary-text centering mr-1">EFT  Deposit Address</div>
                                 <input type="text" value="0xDC4c566485ddB6B56E7A7C4272782Ac2C9c674b4" class="primary-modal-input" disabled="" id="adress_BEP20_USDT">
                             </div>
                             <div class="mb-4">
@@ -229,7 +591,7 @@
                                     <div class="d-flex align-items-center">
                                         <div class="m-0">
                                             <span class="fw-semibold d-block fs-8 primary-text">Minium Deposit</span>
-                                            <a class="fw-bold text-gray-800 fs-7">10 <span class="unit">XCO</span></a>
+                                            <a class="fw-bold text-gray-800 fs-7">10 <span class="unit">EFT</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -238,7 +600,7 @@
                     
                             <div class="mb-6">
                                 <span class="" style="font-size:11px">
-                                    Send only <strong>XCO</strong> to this deposit address.<br>
+                                    Send only <strong>EFT</strong> to this deposit address.<br>
                                     Make sure that the network for depositing matches the network for withdrawing, otherwise assets may be lost.
                                 </span>
                             </div>
@@ -269,14 +631,14 @@
                  <div class="primary-modal-content">
                     <div class="card-body p-9">
                         <div class="modal-dialog-value text-center">
-                            2,790.00 XCO
+                            2,790.00 EFT
                         </div>
                         <div class="fs-4 fw-semibold mb-7 text-center primary-text ">Available Balance</div>
                     </div>
 
                     <div id="form_withdraw_popup">
                         <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
-                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="txtCurrency" value="EFT">
                             <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
                             <step data="1" >
                                 <div class="fv-row">
@@ -285,7 +647,7 @@
                                         <a class="primary-text pointer" style="position:absolute; right: 10px;" onclick="$('#amount').val('0')">Max</a>
                                     </label>
                                     <div class="position-relative mb-3">
-                                        <input class="primary-modal-input w-100" placeholder="Minimum 100 XCO" name="txtAmount" id="amount" required="" type="number" step="any">
+                                        <input class="primary-modal-input w-100" placeholder="Minimum 100 EFT" name="txtAmount" id="amount" required="" type="number" step="any">
                                         <small class="form-text primary-text " style="font-size: 10px">Fee 2%</small>
                                     </div>
                                 </div>
@@ -295,7 +657,7 @@
                                     </label>
                                     <div class="position-relative mb-3">
                                         <select class="primary-modal-input w-100">
-                                            <option value="XCO">XCO</option>
+                                            <option value="EFT">EFT</option>
                                         </select>
                                     </div>
                                 </div>
@@ -345,14 +707,14 @@
                  <div class="primary-modal-content">
                     <div class="card-body p-9">
                         <div class="modal-dialog-value text-center">
-                            2,790.00 XCO
+                            2,790.00 EFT
                         </div>
                         <div class="fs-4 fw-semibold mb-7 text-center primary-text ">Available Balance</div>
                     </div>
 
                     <div id="form_withdraw_popup">
                         <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
-                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="txtCurrency" value="EFT">
                             <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
                             <step data="1" >
                                 <div class="fv-row">
@@ -360,7 +722,7 @@
                                         From wallet
                                     </label>
                                     <div class="position-relative mb-3">
-                                        <input class="primary-modal-input w-100" value="XCO" name="txtAmount" id="amount" required="" type="number" step="any">
+                                        <input class="primary-modal-input w-100" value="EFT" name="txtAmount" id="amount" required="" type="number" step="any">
                                     </div>
                                 </div>
                                 <div class="fv-row">
@@ -408,7 +770,7 @@
                 <div class="primary-modal">
                  <div class="primary-modal-header">
                     <div class="primary-modal-title">
-                        Deposit XCO
+                        Deposit EFT
                     </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="fa-solid fa-xmark"></i>
@@ -417,14 +779,14 @@
                  <div class="primary-modal-content">
                     <div class="card-body p-9">
                         <div class="modal-dialog-value text-center">
-                            2,790.00 XCO
+                            2,790.00 EFT
                         </div>
                         <div class="fs-4 fw-semibold mb-7 text-center primary-text ">Available Balance</div>
                     </div>
 
                     <div id="form_withdraw_popup">
                         <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
-                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="txtCurrency" value="EFT">
                             <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
                             <step data="1" >
                                 <div class="fv-row">
@@ -433,7 +795,7 @@
                                         <a class="primary-text pointer" style="position:absolute; right: 10px;" value="USDT" onclick="$('#amount').val('0')">Max</a>
                                     </label>
                                     <div class="position-relative mb-3">
-                                        <input class="primary-modal-input w-100" placeholder="Please enter amount (XCO)" name="txtAmount" id="amount" required="" type="number" step="any">
+                                        <input class="primary-modal-input w-100" placeholder="Please enter amount (EFT)" name="txtAmount" id="amount" required="" type="number" step="any">
                                     </div>
                                 </div>
                                 <div class="fv-row">

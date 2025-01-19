@@ -63,8 +63,8 @@
     <!-- MAIN CONTENT -->
     <div class="dashboard-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-6 col-fit-height">
+            <div class="grid grid-2 grid-m-1">
+                <div class="grid grid-2 grid-m-1">
                     <a href="#todeposit" class="primary-box primary-box--black d-flex flex-column primary-box--gradient">
                         <div class="d-flex flex-column align-items-start">
                             <div class="card-icon mb-3">
@@ -79,8 +79,6 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-xl-3 col-6 col-fit-height">
                     <a href="#todeposit" class="primary-box primary-box--black d-flex flex-column primary-box--gold">
                         <div class="d-flex flex-column align-items-start">
                             <div class="card-icon card-icon--gold mb-3">
@@ -96,57 +94,54 @@
                         </div>
                     </a>
                 </div>
-
-                <div class="col-xl-6 col-12">
-                    <div class="grid grid-2 grid-m-1 gap-y-0">
-                        <div data-toggle="modal" data-target="#referralModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon">
-                                    <i class="fa-solid fa-diagram-project"></i>
-                                </div>
-                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                    Referral Link
-                                </div>
+                <div class="grid grid-2 grid-m-1 gap-y-0">
+                    <div data-toggle="modal" data-target="#referralModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                Referral Link
                             </div>
                         </div>
-                        <div data-toggle="modal" data-target="#changePasswordModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon">
-                                    <i class="fa-solid fa-lock"></i>
-                                </div>
-                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                    Change Password
-                                </div>
+                    </div>
+                    <div data-toggle="modal" data-target="#changePasswordModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                Change Password
                             </div>
                         </div>
-                        <div data-toggle="modal" data-target="#authenModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon">
-                                    <i class="fa-solid fa-user-lock"></i>
-                                </div>
-                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                    Two-Factor Authentication
-                                </div>
+                    </div>
+                    <div data-toggle="modal" data-target="#authenModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-user-lock"></i>
+                            </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                Two-Factor Authentication
                             </div>
                         </div>
-                        <div data-toggle="modal" data-target="#kycModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon">
-                                    <i class="fa-solid fa-user-shield"></i>
-                                </div>
-                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                    Verify Account
-                                </div>
+                    </div>
+                    <!-- <div data-toggle="modal" data-target="#kycModal" class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                                Verify Account
                             </div>
                         </div>
-                        <div class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column hide-on-pc">
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon">
-                                    <i class="fa-solid fa-right-from-bracket"></i>
-                                </div>
-                                <div class="dashboard-balance-value dashboard-balance-value-small text-center">
-                                   Logout
-                                </div>
+                    </div> -->
+                    <div class="primary-box primary-box-cursor primary-box--black pd-15 d-flex flex-column hide-on-pc">
+                        <div class="d-flex align-items-center">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                            <div class="dashboard-balance-value dashboard-balance-value-small text-center">
+                               Logout
                             </div>
                         </div>
                     </div>
@@ -217,7 +212,7 @@
     <!-- FOOTER -->
     <footer class="footer hidden-m">
         <div class="footer-verify">
-            Copyright © X-Coin | Designed by X-Coin Team.
+            ECOFUSION LTD - Company number: 14583260
         </div>
     </footer>
 
@@ -266,7 +261,7 @@
                     <div class="primary-modal-content">
                     <div id="form_withdraw_popup">
                         <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
-                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="txtCurrency" value="EFT">
                             <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
                             <step data="1" >
                                 <div class="fv-row">
@@ -387,7 +382,7 @@
                     <div class="primary-modal-content">
                     <div id="form_withdraw_popup">
                         <form method="post" novalidate="novalidate" autocomplete="off" id="formPayout">
-                            <input type="hidden" name="txtCurrency" value="XCO">
+                            <input type="hidden" name="txtCurrency" value="EFT">
                             <input type="hidden" name="token" value="a9dc3b38-0896-4a7a-ad4b-45cca2b11125">
                             <step data="1" >
                                 <div class="fv-row">

@@ -334,7 +334,7 @@ a:hover{
    width: auto;
 }
 
-.value{
+/* .value{
  font-weight: 800;
  font-size: 18px;
  -webkit-text-fill-color: transparent;
@@ -343,6 +343,10 @@ a:hover{
  -webkit-user-select: none;
  -ms-user-select: none;
  user-select: none;
+} */
+
+.value {
+  color: #01EFB0;
 }
 
 .value-large{

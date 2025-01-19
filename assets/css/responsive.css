@@ -425,6 +425,10 @@
     .big-background-3 {
         background-position: 20% top;
     }
+
+    .token-infor .d-flex.flex-1.flex-column.justify-content-center.align-items-end.pr-4{
+        padding-right: 0 !important;
+    }
 }
 
 
